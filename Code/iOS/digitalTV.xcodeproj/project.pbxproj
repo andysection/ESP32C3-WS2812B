@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FA4EE0B1779EA4164C0E19B /* Pods_digitalTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A2EC9D92182C4B7CA10613 /* Pods_digitalTV.framework */; };
+		8A99CE3D299776E200047258 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE3C299776E200047258 /* AppDelegate.m */; };
+		8A99CE40299776E200047258 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE3F299776E200047258 /* SceneDelegate.m */; };
+		8A99CE43299776E200047258 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE42299776E200047258 /* ViewController.m */; };
+		8A99CE46299776E200047258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99CE44299776E200047258 /* Main.storyboard */; };
+		8A99CE48299776E500047258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A99CE47299776E500047258 /* Assets.xcassets */; };
+		8A99CE4B299776E500047258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99CE49299776E500047258 /* LaunchScreen.storyboard */; };
+		8A99CE4E299776E500047258 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE4D299776E500047258 /* main.m */; };
+		8A99CE5C29977AA000047258 /* CircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE5629977AA000047258 /* CircularSlider.m */; };
+		8A99CE5D29977AA000047258 /* Palette.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE5929977AA000047258 /* Palette.m */; };
+		8A99CE5E29977AA000047258 /* HSVWithNew.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE5B29977AA000047258 /* HSVWithNew.c */; };
+		8A99CE652997871F00047258 /* SecColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE632997871F00047258 /* SecColorVC.m */; };
+		8A99CE662997871F00047258 /* SecColorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A99CE642997871F00047258 /* SecColorVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06A2EC9D92182C4B7CA10613 /* Pods_digitalTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digitalTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		317B23D1BCC956CE3A6BEFB0 /* Pods-digitalTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalTV.debug.xcconfig"; path = "Target Support Files/Pods-digitalTV/Pods-digitalTV.debug.xcconfig"; sourceTree = "<group>"; };
+		33E7953C49F3FEE96E702082 /* Pods-digitalTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalTV.release.xcconfig"; path = "Target Support Files/Pods-digitalTV/Pods-digitalTV.release.xcconfig"; sourceTree = "<group>"; };
+		8A99CE38299776E200047258 /* digitalTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digitalTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A99CE3B299776E200047258 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A99CE3C299776E200047258 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A99CE3E299776E200047258 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8A99CE3F299776E200047258 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8A99CE41299776E200047258 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8A99CE42299776E200047258 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8A99CE45299776E200047258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A99CE47299776E500047258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A99CE4A299776E500047258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A99CE4C299776E500047258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A99CE4D299776E500047258 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A99CE5529977AA000047258 /* CircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularSlider.h; sourceTree = "<group>"; };
+		8A99CE5629977AA000047258 /* CircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularSlider.m; sourceTree = "<group>"; };
+		8A99CE5829977AA000047258 /* HSVWithNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSVWithNew.h; sourceTree = "<group>"; };
+		8A99CE5929977AA000047258 /* Palette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Palette.m; sourceTree = "<group>"; };
+		8A99CE5A29977AA000047258 /* Palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palette.h; sourceTree = "<group>"; };
+		8A99CE5B29977AA000047258 /* HSVWithNew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HSVWithNew.c; sourceTree = "<group>"; };
+		8A99CE622997871F00047258 /* SecColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecColorVC.h; sourceTree = "<group>"; };
+		8A99CE632997871F00047258 /* SecColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecColorVC.m; sourceTree = "<group>"; };
+		8A99CE642997871F00047258 /* SecColorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecColorVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A99CE35299776E200047258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA4EE0B1779EA4164C0E19B /* Pods_digitalTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A99CE2F299776E200047258 = {
+			isa = PBXGroup;
+			children = (
+				8A99CE3A299776E200047258 /* digitalTV */,
+				8A99CE39299776E200047258 /* Products */,
+				F381CA2C3F4EA1AB58C3845E /* Pods */,
+				E0D00B798AB2A3E9AA670BA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A99CE39299776E200047258 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A99CE38299776E200047258 /* digitalTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A99CE3A299776E200047258 /* digitalTV */ = {
+			isa = PBXGroup;
+			children = (
+				8A99CE5729977AA000047258 /* Palette */,
+				8A99CE5429977AA000047258 /* Slider */,
+				8A99CE3B299776E200047258 /* AppDelegate.h */,
+				8A99CE3C299776E200047258 /* AppDelegate.m */,
+				8A99CE3E299776E200047258 /* SceneDelegate.h */,
+				8A99CE3F299776E200047258 /* SceneDelegate.m */,
+				8A99CE41299776E200047258 /* ViewController.h */,
+				8A99CE42299776E200047258 /* ViewController.m */,
+				8A99CE44299776E200047258 /* Main.storyboard */,
+				8A99CE47299776E500047258 /* Assets.xcassets */,
+				8A99CE49299776E500047258 /* LaunchScreen.storyboard */,
+				8A99CE4C299776E500047258 /* Info.plist */,
+				8A99CE4D299776E500047258 /* main.m */,
+				8A99CE622997871F00047258 /* SecColorVC.h */,
+				8A99CE632997871F00047258 /* SecColorVC.m */,
+				8A99CE642997871F00047258 /* SecColorVC.xib */,
+			);
+			path = digitalTV;
+			sourceTree = "<group>";
+		};
+		8A99CE5429977AA000047258 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				8A99CE5529977AA000047258 /* CircularSlider.h */,
+				8A99CE5629977AA000047258 /* CircularSlider.m */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		8A99CE5729977AA000047258 /* Palette */ = {
+			isa = PBXGroup;
+			children = (
+				8A99CE5829977AA000047258 /* HSVWithNew.h */,
+				8A99CE5929977AA000047258 /* Palette.m */,
+				8A99CE5A29977AA000047258 /* Palette.h */,
+				8A99CE5B29977AA000047258 /* HSVWithNew.c */,
+			);
+			path = Palette;
+			sourceTree = "<group>";
+		};
+		E0D00B798AB2A3E9AA670BA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06A2EC9D92182C4B7CA10613 /* Pods_digitalTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F381CA2C3F4EA1AB58C3845E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				317B23D1BCC956CE3A6BEFB0 /* Pods-digitalTV.debug.xcconfig */,
+				33E7953C49F3FEE96E702082 /* Pods-digitalTV.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A99CE37299776E200047258 /* digitalTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A99CE51299776E500047258 /* Build configuration list for PBXNativeTarget "digitalTV" */;
+			buildPhases = (
+				D31479F97F2CD2586C4785B9 /* [CP] Check Pods Manifest.lock */,
+				8A99CE34299776E200047258 /* Sources */,
+				8A99CE35299776E200047258 /* Frameworks */,
+				8A99CE36299776E200047258 /* Resources */,
+				D0D65C832E106D40B3614033 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = digitalTV;
+			productName = digitalTV;
+			productReference = 8A99CE38299776E200047258 /* digitalTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A99CE30299776E200047258 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = SO;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8A99CE37299776E200047258 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A99CE33299776E200047258 /* Build configuration list for PBXProject "digitalTV" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A99CE2F299776E200047258;
+			productRefGroup = 8A99CE39299776E200047258 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A99CE37299776E200047258 /* digitalTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A99CE36299776E200047258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A99CE4B299776E500047258 /* LaunchScreen.storyboard in Resources */,
+				8A99CE48299776E500047258 /* Assets.xcassets in Resources */,
+				8A99CE662997871F00047258 /* SecColorVC.xib in Resources */,
+				8A99CE46299776E200047258 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0D65C832E106D40B3614033 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-digitalTV/Pods-digitalTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-digitalTV/Pods-digitalTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-digitalTV/Pods-digitalTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D31479F97F2CD2586C4785B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-digitalTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A99CE34299776E200047258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A99CE5C29977AA000047258 /* CircularSlider.m in Sources */,
+				8A99CE5E29977AA000047258 /* HSVWithNew.c in Sources */,
+				8A99CE652997871F00047258 /* SecColorVC.m in Sources */,
+				8A99CE43299776E200047258 /* ViewController.m in Sources */,
+				8A99CE3D299776E200047258 /* AppDelegate.m in Sources */,
+				8A99CE5D29977AA000047258 /* Palette.m in Sources */,
+				8A99CE4E299776E500047258 /* main.m in Sources */,
+				8A99CE40299776E200047258 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A99CE44299776E200047258 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A99CE45299776E200047258 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A99CE49299776E500047258 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A99CE4A299776E500047258 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A99CE4F299776E500047258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A99CE50299776E500047258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A99CE52299776E500047258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317B23D1BCC956CE3A6BEFB0 /* Pods-digitalTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWRRKXUZ5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = digitalTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = section.one.digitalTV.digitalTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A99CE53299776E500047258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E7953C49F3FEE96E702082 /* Pods-digitalTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PWRRKXUZ5G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = digitalTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = section.one.digitalTV.digitalTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A99CE33299776E200047258 /* Build configuration list for PBXProject "digitalTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A99CE4F299776E500047258 /* Debug */,
+				8A99CE50299776E500047258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A99CE51299776E500047258 /* Build configuration list for PBXNativeTarget "digitalTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A99CE52299776E500047258 /* Debug */,
+				8A99CE53299776E500047258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A99CE30299776E200047258 /* Project object */;
+}
