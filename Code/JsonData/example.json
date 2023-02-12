@@ -1,0 +1,24 @@
+{
+    //单位毫秒
+    "duration":250,
+    "data": [
+        {
+            "row": 0,//纵坐标 0开始
+            "column": 0,//横坐标 0开始
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "level": 8,//亮度 1-8 默认8
+            "duration": 250//持续时间，单位毫秒，如果没有就是用默认最外层的duration
+        },
+        {
+            "row": 0,
+            "column": 0,
+            "red": 255,
+            "green": 255,
+            "blue": 255,
+            "level": 8,
+            "duration": 250
+        }
+    ]
+}
