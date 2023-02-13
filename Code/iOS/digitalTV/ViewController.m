@@ -42,7 +42,6 @@ NSString *cellId = @"cellId";
     self.currentColor = [self randColor];
     self.frames = @[];
     [self initTrack];
-    self.currentIndex = 0;
     if (1) {// 木有数据 初始化状态
         [self saveFrame];
         [self.collectionView reloadData];
@@ -97,24 +96,34 @@ NSString *cellId = @"cellId";
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)sender {
-    NSLog(@"%d", sender.view.tag);
-    if (sender.view.backgroundColor == self.currentColor) {
-        sender.view.backgroundColor = UIColor.blackColor;
-    } else {
-        sender.view.backgroundColor = self.currentColor;
+    NSLog(@"%d - %d", self.currentIndex, sender.view.tag);
+    UIColor *color = CGColorEqualToColor(sender.view.backgroundColor.CGColor, self.currentColor.CGColor)? UIColor.blackColor: self.currentColor;
+    if (CGColorEqualToColor(sender.view.backgroundColor.CGColor, self.currentColor.CGColor)) {
+        NSLog(@"same color");
     }
+    sender.view.backgroundColor = color;
+    NSMutableArray *mArr = [self.frames[self.currentIndex][@"map"] mutableCopy];
+    mArr[sender.view.tag] = [self getMapWithColor:color];
+    NSMutableArray *mFrames = self.frames.mutableCopy;
+    mFrames[self.currentIndex] = @{
+        @"duration": self.frames[self.currentIndex][@"map"],
+        @"map": mArr.copy
+    };
+    self.frames = mFrames.copy;
 }
 
 - (IBAction)allOffAction:(id)sender {
     for (UIView *view in self.viewDic.allValues) {
         view.backgroundColor = UIColor.blackColor;
     }
+    [self saveFrame];
 }
 
 - (IBAction)allSetAction:(id)sender {
     for (UIView *view in self.viewDic.allValues) {
         view.backgroundColor = self.currentColor;
     }
+    [self saveFrame];
 }
 
 - (IBAction)currentColor:(UIButton *)sender {
@@ -138,6 +147,7 @@ NSString *cellId = @"cellId";
             }
         }
     }
+    [self saveFrame];
 }
 
 - (IBAction)rightPush:(UIButton *)sender {
@@ -151,6 +161,7 @@ NSString *cellId = @"cellId";
             }
         }
     }
+    [self saveFrame];
 }
 
 - (NSDictionary *)getJsonWithDuration:(int)duration {
@@ -182,8 +193,15 @@ NSString *cellId = @"cellId";
 #pragma mark - save
 - (void)saveFrame {
     NSMutableArray *mArr = self.frames.mutableCopy;
+    mArr[self.currentIndex] = [self getJsonWithDuration:1000];
+    self.frames = mArr.copy;
+}
+
+- (void)addFrame {
+    NSMutableArray *mArr = self.frames.mutableCopy;
     [mArr addObject:[self getJsonWithDuration:1000]];
     self.frames = mArr.copy;
+    self.currentIndex = self.frames.count - 1;
 }
 
 - (void)resetData {
@@ -197,6 +215,17 @@ NSString *cellId = @"cellId";
 
 - (IBAction)saveAction:(id)sender {
     [self saveFrame];
+}
+- (IBAction)removeAction:(id)sender {
+    NSMutableArray *mArr = self.frames.mutableCopy;
+    if (mArr.count > 1) {
+        [mArr removeLastObject];
+    } else {
+        return;
+    }
+    self.frames = mArr.copy;
+    self.currentIndex = self.frames.count - 1;
+    [self.collectionView reloadData];
 }
 
 - (void)showAnimation {
@@ -266,22 +295,25 @@ NSString *cellId = @"cellId";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row < self.frames.count) {
         if (indexPath.row == self.currentIndex) return;
-        NSDictionary *frame = self.frames[indexPath.row];
-        NSArray *arr = frame[@"map"];
-        for (int i = 0; i < arr.count; i++) {
-            NSDictionary *dic = arr[i];
-            int red = [dic[@"red"] intValue];
-            int green = [dic[@"green"] intValue];
-            int blue = [dic[@"blue"] intValue];
-            UIColor *color = [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
-            self.viewDic[@(i)].backgroundColor = color;
-        }
         self.currentIndex = indexPath.row;
         [collectionView reloadData];
     } else {
-        [self saveFrame];
+        [self addFrame];
         [collectionView reloadData];
     }
 }
 
+- (void)setCurrentIndex:(int)currentIndex {
+    _currentIndex = currentIndex;
+    NSDictionary *frame = self.frames[_currentIndex];
+    NSArray *arr = frame[@"map"];
+    for (int i = 0; i < arr.count; i++) {
+        NSDictionary *dic = arr[i];
+        int red = [dic[@"red"] intValue];
+        int green = [dic[@"green"] intValue];
+        int blue = [dic[@"blue"] intValue];
+        UIColor *color = [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
+        self.viewDic[@(i)].backgroundColor = color;
+    }
+}
 @end
