@@ -1,23 +1,42 @@
 {
-    "duration":250,
-    "data": [
+    "animation":[
         {
-            "row": 0,
-            "column": 0,
-            "red": 255,
-            "green": 255,
-            "blue": 255,
-            "level": 8,
-            "duration": 250
+            "last":250,
+            "map": [
+                {
+                    "row": 0,
+                    "column": 0,
+                    "red": 255,
+                    "green": 255,
+                    "blue": 255
+                },
+                {
+                    "row": 0,
+                    "column": 0,
+                    "red": 255,
+                    "green": 255,
+                    "blue": 255
+                }
+            ]
         },
         {
-            "row": 0,
-            "column": 0,
-            "red": 255,
-            "green": 255,
-            "blue": 255,
-            "level": 8,
-            "duration": 250
+            "last":250,
+            "map": [
+                {
+                    "row": 0,
+                    "column": 0,
+                    "red": 255,
+                    "green": 255,
+                    "blue": 255
+                },
+                {
+                    "row": 0,
+                    "column": 0,
+                    "red": 255,
+                    "green": 255,
+                    "blue": 255
+                }
+            ]
         }
     ]
 }

@@ -20,6 +20,9 @@
 		8A99CE5E29977AA000047258 /* HSVWithNew.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE5B29977AA000047258 /* HSVWithNew.c */; };
 		8A99CE652997871F00047258 /* SecColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE632997871F00047258 /* SecColorVC.m */; };
 		8A99CE662997871F00047258 /* SecColorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A99CE642997871F00047258 /* SecColorVC.xib */; };
+		8A99CE6D299A198000047258 /* SOFrameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE6B299A198000047258 /* SOFrameCell.m */; };
+		8A99CE6E299A198000047258 /* SOFrameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A99CE6C299A198000047258 /* SOFrameCell.xib */; };
+		8A99CE71299A22DF00047258 /* SOCubeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A99CE70299A22DF00047258 /* SOCubeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,11 @@
 		8A99CE622997871F00047258 /* SecColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecColorVC.h; sourceTree = "<group>"; };
 		8A99CE632997871F00047258 /* SecColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecColorVC.m; sourceTree = "<group>"; };
 		8A99CE642997871F00047258 /* SecColorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecColorVC.xib; sourceTree = "<group>"; };
+		8A99CE6A299A198000047258 /* SOFrameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOFrameCell.h; sourceTree = "<group>"; };
+		8A99CE6B299A198000047258 /* SOFrameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOFrameCell.m; sourceTree = "<group>"; };
+		8A99CE6C299A198000047258 /* SOFrameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SOFrameCell.xib; sourceTree = "<group>"; };
+		8A99CE6F299A22DF00047258 /* SOCubeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SOCubeModel.h; path = digitalTV/SOCubeModel.h; sourceTree = SOURCE_ROOT; };
+		8A99CE70299A22DF00047258 /* SOCubeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SOCubeModel.m; path = digitalTV/SOCubeModel.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,11 @@
 				8A99CE622997871F00047258 /* SecColorVC.h */,
 				8A99CE632997871F00047258 /* SecColorVC.m */,
 				8A99CE642997871F00047258 /* SecColorVC.xib */,
+				8A99CE6A299A198000047258 /* SOFrameCell.h */,
+				8A99CE6B299A198000047258 /* SOFrameCell.m */,
+				8A99CE6C299A198000047258 /* SOFrameCell.xib */,
+				8A99CE6F299A22DF00047258 /* SOCubeModel.h */,
+				8A99CE70299A22DF00047258 /* SOCubeModel.m */,
 			);
 			path = digitalTV;
 			sourceTree = "<group>";
@@ -200,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A99CE4B299776E500047258 /* LaunchScreen.storyboard in Resources */,
+				8A99CE6E299A198000047258 /* SOFrameCell.xib in Resources */,
 				8A99CE48299776E500047258 /* Assets.xcassets in Resources */,
 				8A99CE662997871F00047258 /* SecColorVC.xib in Resources */,
 				8A99CE46299776E200047258 /* Main.storyboard in Resources */,
@@ -257,9 +271,11 @@
 			files = (
 				8A99CE5C29977AA000047258 /* CircularSlider.m in Sources */,
 				8A99CE5E29977AA000047258 /* HSVWithNew.c in Sources */,
+				8A99CE71299A22DF00047258 /* SOCubeModel.m in Sources */,
 				8A99CE652997871F00047258 /* SecColorVC.m in Sources */,
 				8A99CE43299776E200047258 /* ViewController.m in Sources */,
 				8A99CE3D299776E200047258 /* AppDelegate.m in Sources */,
+				8A99CE6D299A198000047258 /* SOFrameCell.m in Sources */,
 				8A99CE5D29977AA000047258 /* Palette.m in Sources */,
 				8A99CE4E299776E500047258 /* main.m in Sources */,
 				8A99CE40299776E200047258 /* SceneDelegate.m in Sources */,
