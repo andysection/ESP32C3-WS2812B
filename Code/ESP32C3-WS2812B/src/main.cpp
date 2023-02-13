@@ -3,6 +3,8 @@
 #include <map>
 #include <string>
 #include <FastLED.h>
+#include <SPIFFS.h>
+#include <FS.h>
 
 class LEDmodel
 {
@@ -27,6 +29,11 @@ CRGB leds[NUM_LEDS];
 
 void setup() {
   Serial.begin(115200);
+
+  if (!SPIFFS.begin()) {
+    Serial.println("SPIFFS Mount Failed");
+    delay(1000);
+  }
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   std::map<int, LEDmodel> maps;
 }
