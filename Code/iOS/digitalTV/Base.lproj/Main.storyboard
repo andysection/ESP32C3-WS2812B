@@ -117,6 +117,21 @@
                                     <action selector="rightPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uP0-dA-Ngi"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="默认250毫秒" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ag-eF-OhM">
+                                <rect key="frame" x="512" y="272" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umf-pq-uyu">
+                                <rect key="frame" x="754" y="236" width="82" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="读取动画"/>
+                                <connections>
+                                    <action selector="loadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZD-fv-Jq9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -130,6 +145,7 @@
                     </view>
                     <connections>
                         <outlet property="colorBtn" destination="uyQ-jg-Z1v" id="aeR-71-55z"/>
+                        <outlet property="durationTF" destination="9Ag-eF-OhM" id="pvy-aD-8Cj"/>
                         <outlet property="gridView" destination="1CL-JG-gAR" id="vD9-MY-3dX"/>
                         <outlet property="trackView" destination="Ggl-Xt-Nzi" id="GAh-y7-cta"/>
                     </connections>

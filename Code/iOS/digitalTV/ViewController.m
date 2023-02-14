@@ -21,6 +21,7 @@ NSString *cellId = @"cellId";
 
 @property (nonatomic, strong) UIStackView *grid;
 
+@property (weak, nonatomic) IBOutlet UITextField *durationTF;
 @property (weak, nonatomic) IBOutlet UIView *gridView;
 @property (weak, nonatomic) IBOutlet UIView *trackView;
 @property (weak, nonatomic) IBOutlet UIButton *colorBtn;
@@ -190,18 +191,27 @@ NSString *cellId = @"cellId";
     return dic;
 }
 
+- (int)getDuration {
+    int i = [self.durationTF.text intValue];
+    if (i == 0) {
+        return 250;
+    }
+    return i;
+}
+
 #pragma mark - save
 - (void)saveFrame {
     NSMutableArray *mArr = self.frames.mutableCopy;
-    mArr[self.currentIndex] = [self getJsonWithDuration:1000];
+    mArr[self.currentIndex] = [self getJsonWithDuration:[self getDuration]];
     self.frames = mArr.copy;
 }
 
 - (void)addFrame {
     NSMutableArray *mArr = self.frames.mutableCopy;
-    [mArr addObject:[self getJsonWithDuration:1000]];
+    [mArr addObject:[self getJsonWithDuration:[self getDuration]]];
     self.frames = mArr.copy;
     self.currentIndex = self.frames.count - 1;
+    
 }
 
 - (void)resetData {
@@ -210,7 +220,19 @@ NSString *cellId = @"cellId";
 
 - (IBAction)outAction:(id)sender {
     NSString *str = [self.frames yy_modelToJSONString];
+    [[NSUserDefaults standardUserDefaults] setValue:str forKey:kJsonKey];
     NSLog(@"%@", str);
+}
+
+- (IBAction)loadAction:(id)sender {
+    NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:kJsonKey];
+    NSArray *arr = nil;
+    NSData *jsonData = [str dataUsingEncoding: NSUTF8StringEncoding];
+    NSArray *list = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:NULL];
+    if (list.count > 0) {
+        self.frames = list;
+        self.currentIndex = 0;
+    }
 }
 
 - (IBAction)saveAction:(id)sender {
@@ -310,5 +332,8 @@ NSString *cellId = @"cellId";
         self.viewDic[@(i)].backgroundColor = color;
     }
     [self.collectionView reloadData];
+    if (self.frames.count > 0) {
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    }
 }
 @end
