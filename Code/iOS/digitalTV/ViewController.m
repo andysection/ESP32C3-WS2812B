@@ -106,7 +106,7 @@ NSString *cellId = @"cellId";
     mArr[sender.view.tag] = [self getMapWithColor:color];
     NSMutableArray *mFrames = self.frames.mutableCopy;
     mFrames[self.currentIndex] = @{
-        @"duration": self.frames[self.currentIndex][@"map"],
+        @"duration": self.frames[self.currentIndex][@"duration"],
         @"map": mArr.copy
     };
     self.frames = mFrames.copy;
@@ -229,28 +229,22 @@ NSString *cellId = @"cellId";
 }
 
 - (void)showAnimation {
-    NSArray *arr = self.frames;
-    if (self.currentIndex < arr.count) {
-        NSDictionary *dic = arr[self.currentIndex];
+    if (self.currentIndex < self.frames.count) {
+        NSDictionary *dic = self.frames[self.currentIndex];
         double time = [dic[@"duration"] doubleValue];
-        NSArray *map = dic[@"map"];
-        for (int i = 0; i < map.count; i++) {
-            int red = [dic[@"red"] intValue];
-            int green = [dic[@"green"] intValue];
-            int blue = [dic[@"blue"] intValue];
-            UIColor *color = [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
-            self.viewDic[@(i)].backgroundColor = color;
+        if (self.currentIndex != self.frames.count - 1) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time / 1000 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.currentIndex++;
+                [self showAnimation];
+            });
         }
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time / 1000 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self showAnimation];
-        });
-        self.currentIndex ++;
     } else {
-        self.currentIndex = 0;
+        
     }
 }
 
 - (IBAction)animationAction:(id)sender {
+    self.currentIndex = 0;
     [self showAnimation];
 }
 
@@ -315,5 +309,6 @@ NSString *cellId = @"cellId";
         UIColor *color = [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
         self.viewDic[@(i)].backgroundColor = color;
     }
+    [self.collectionView reloadData];
 }
 @end
