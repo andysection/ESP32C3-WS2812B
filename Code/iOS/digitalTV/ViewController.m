@@ -196,9 +196,7 @@ NSString *cellId = @"cellId";
     int green = ci.green * 255;
     int blue = ci.blue * 255;
     NSDictionary *dic = @{
-        @"red": @(red),
-        @"green": @(green),
-        @"blue": @(blue),
+        @"color": @([self getR:red G:green B:blue])
     };
     return dic;
 }
@@ -340,9 +338,10 @@ NSString *cellId = @"cellId";
     NSArray *arr = frame[@"map"];
     for (int i = 0; i < arr.count; i++) {
         NSDictionary *dic = arr[i];
-        int red = [dic[@"red"] intValue];
-        int green = [dic[@"green"] intValue];
-        int blue = [dic[@"blue"] intValue];
+        int rgb = [dic[@"color"] intValue];
+        int red = [self getRedFromRGB:rgb];
+        int green = [self getGreenFromRGB:rgb];
+        int blue = [self getBlueFromRGB:rgb];
         UIColor *color = [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
         self.viewDic[@(i)].backgroundColor = color;
     }
@@ -350,5 +349,24 @@ NSString *cellId = @"cellId";
     if (self.frames.count > 0) {
         [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
     }
+}
+
+- (int)getR:(int)r G:(int)g B:(int)b {
+    int i = r;
+    i = (i << 8) + g;
+    i = (i << 8) + b;
+    return i;
+}
+
+- (int)getRedFromRGB:(int)rgb {
+    return ((rgb & 0xFF0000) >> 8) >>8;
+}
+
+- (int)getGreenFromRGB:(int)rgb {
+    return (rgb & 0xFF00) >> 8;
+}
+
+- (int)getBlueFromRGB:(int)rgb {
+    return rgb & 0xFF;
 }
 @end
