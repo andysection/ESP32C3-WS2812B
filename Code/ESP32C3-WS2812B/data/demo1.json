@@ -1,42 +1,2193 @@
 {
-    "animation":[
-        {
-            "last":250,
-            "map": [
-                {
-                    "row": 0,
-                    "column": 0,
-                    "red": 255,
-                    "green": 255,
-                    "blue": 255
-                },
-                {
-                    "row": 0,
-                    "column": 0,
-                    "red": 255,
-                    "green": 255,
-                    "blue": 255
-                }
-            ]
+    "data": [
+      {
+        "map": {
+            ""
         },
-        {
-            "last":250,
-            "map": [
-                {
-                    "row": 0,
-                    "column": 0,
-                    "red": 255,
-                    "green": 255,
-                    "blue": 255
-                },
-                {
-                    "row": 0,
-                    "column": 0,
-                    "red": 255,
-                    "green": 255,
-                    "blue": 255
-                }
-            ]
-        }
+        "duration": 250,
+        "bgRed": 0,
+        "bgGreen": 0,
+        "bgBlue": 0
+      },
+      {
+        "map": [
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          }
+        ],
+        "duration": 250
+      },
+      {
+        "map": [
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          }
+        ],
+        "duration": 250
+      },
+      {
+        "map": [
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          }
+        ],
+        "duration": 250
+      },
+      {
+        "map": [
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 150,
+            "green": 212,
+            "blue": 101
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          },
+          {
+            "red": 0,
+            "green": 0,
+            "blue": 0
+          }
+        ],
+        "duration": 250
+      }
     ]
-}
+  }

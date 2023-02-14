@@ -47,6 +47,18 @@ NSString *cellId = @"cellId";
         [self saveFrame];
         [self.collectionView reloadData];
     }
+    int i = 0xFFFFFF;
+    NSLog(@"%d", i);
+    int r = i/256/256;
+    NSLog(@"%d", r);
+    int d = 1 << 8;
+    NSLog(@"%d", d);
+    i = 255;
+    i = (i << 8) + 255;
+    i = (i << 8) + 254;
+    NSLog(@"%d", i);
+    int j = ((i & 0xFF0000) >> 8) >>8;
+    NSLog(@"%d", j);
 }
 
 - (void)setupGrid {
@@ -220,6 +232,9 @@ NSString *cellId = @"cellId";
 
 - (IBAction)outAction:(id)sender {
     NSString *str = [self.frames yy_modelToJSONString];
+    int bgR = 0;
+    int bgG = 0;
+    int bgB = 0;
     [[NSUserDefaults standardUserDefaults] setValue:str forKey:kJsonKey];
     NSLog(@"%@", str);
 }
