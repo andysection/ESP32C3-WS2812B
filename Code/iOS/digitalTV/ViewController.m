@@ -179,7 +179,7 @@ NSString *cellId = @"cellId";
 
 - (NSDictionary *)getJsonWithDuration:(int)duration {
     NSMutableArray *marr = @[].mutableCopy;
-    for (int i = 0; i < (row + 1) * (column + 1); i++) {
+    for (int i = 0; i < (row) * (column); i++) {
         UIColor *color = self.viewDic[@(i)].backgroundColor;
         [marr addObject:[self getMapWithColor:color]];
     }
