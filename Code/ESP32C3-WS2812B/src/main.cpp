@@ -26,7 +26,11 @@ class LEDmodel
 
 #define LED_PIN 2
 #define NUM_LEDS 60
+#define row 5
+#define column 17
+int screen[row * column] = {0};
 CRGB leds[NUM_LEDS];
+DynamicJsonDocument animationDoc(1024*100);
 
 void setup() {
   Serial.begin(115200);
@@ -37,53 +41,43 @@ void setup() {
     delay(1000);
   }
 
-  File file = SPIFFS.open("/demo1.json", "r");
+  File file = SPIFFS.open("/cry.json", "r");
   if (!file) {
     Serial.printf("NO FIle");
   }
   String fileContent = file.readString();
   file.close();
-  Serial.println(fileContent);
 
-
-  // Serial.print(fileContent);
-  DynamicJsonDocument doc(1024*100);
-  deserializeJson(doc, fileContent);
-  int name = doc["flag"];
-  JsonObject root = doc.as<JsonObject>();
-  // int count = doc["data"][1]["duration"];
-  JsonArray arr = root["data"]; 
-  // Serial.println(arr);
-  JsonObject obj = arr[0];
-  // Serial.println(obj);
-  JsonArray map = obj["map"];
-  int count1 = obj["duration"];
-  int color = arr[2]["map"][0]["color"];
-  JsonObject objColor = map[1];
-  int color1 = objColor["color"];
-  Serial.printf("duration - %d\n", count1);
-  Serial.printf("color - %d\n", color);
-  Serial.printf("color1 - %d\n", color1);
-  Serial.printf("map count - %d\n", map.size());
-  Serial.printf("data count - %d\n", arr.size());
+  //文件数据解析
+  deserializeJson(animationDoc, fileContent);
 
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   std::map<int, LEDmodel> maps;
 }
-
+//当前第几帧
+int kCurrentPage = 0;
 void loop() {
-  for (int i = 0; i < NUM_LEDS; i++) {
-    leds[i].setRGB(random(255), random(255), random(255));
-    if (i > 8) {
-      leds[i-8].setRGB(random(255), random(255), random(255));
+  //获取数组
+  JsonObject root = animationDoc.as<JsonObject>();
+  JsonArray data = root["data"];
+  JsonArray frame = data[kCurrentPage]["map"]; 
+  int duration = data[kCurrentPage]["duration"];
+  for (int i = 0; i < row * column; i++)
+  {
+    if (screen[i] != frame[i]) {
+      //LED赋值
+      int color = frame[i];
+      int red = (color & 0xFF0000) >> 16;
+      int green = (color & 0xFF00) >> 8;
+      int blue = color & 0xFF;
+      leds[i].setRGB(red, green, blue);
+      screen[i] = frame[i];
     }
-    if (i > 16) {
-      leds[i-16].setRGB(random(255), random(255), random(255));
-    }
-    leds[i-1].setRGB(random(0), random(0), random(0));
-    FastLED.show();
-    delay(100);
-    Serial.println("run");
+  }
+  delay(duration);
+  kCurrentPage++;
+  if (kCurrentPage == data.size()) {
+    kCurrentPage = 0;
   }
 
   // leds[1] = CRGB::Brown;
