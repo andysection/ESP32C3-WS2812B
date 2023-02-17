@@ -234,7 +234,19 @@ NSString *cellId = @"cellId";
     int bgG = 0;
     int bgB = 0;
     [[NSUserDefaults standardUserDefaults] setValue:str forKey:kJsonKey];
-    NSLog(@"%@", str);
+    NSLog(@"%@\n", str);
+    
+    NSArray *now = self.frames[_currentIndex][@"map"];
+    
+    NSMutableArray *mArr = @[].mutableCopy;
+    
+    for (int i = 0; i < now.count; i++) {
+        NSDictionary *dic = now[i];
+        if ([dic[@"color"] intValue] != 0) {
+            [mArr addObject:@{@"index": @(i), @"color": dic[@"color"]}];
+        }
+    }
+    NSLog(@"当前静态帧:\n%@", [mArr yy_modelToJSONString]);
 }
 
 - (IBAction)loadAction:(id)sender {
