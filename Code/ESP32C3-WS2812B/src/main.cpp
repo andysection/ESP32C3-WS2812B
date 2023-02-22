@@ -64,41 +64,121 @@ void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
 }
 
-void loop() {
-  //获取数组
-  JsonObject root = animationDoc.as<JsonObject>();
-  JsonArray data = root["data"];
-  JsonArray frame = data[kCurrentPage]["map"]; 
-  int duration = data[kCurrentPage]["duration"];
-  for (int i = 0; i < row * column; i++)
+void roundLoop() {
+  FastLED.clear();
+  int nowmap[] = {34, 35, 36, 37, 38, 39, 22, 5,6,7,8,9,10, 11, 12, 13,14};
+
+  for (int i = 0; i < 17; i++)
   {
-    //LED赋值
-     if (screen[i] != frame[i]["color"]) {
-      int color = frame[i]["color"];
-      int red = (color & 0xFF0000) >> 16;
-      int green = (color & 0xFF00) >> 8;
-      int blue = color & 0xFF;
-      int screenIndex = screenMap[i];
-      leds[screenIndex].setRGB(red, green, blue);
-      // Serial.printf("index %d/%d - %d - %d -%d color %d\n", i, screenIndex, red, green, blue, color);
-      screen[i] = frame[i]["color"];
-     }
-  }
-  FastLED.show();
-  delay(150);
-  kCurrentPage++;
-  if (kCurrentPage == data.size()) {
-    kCurrentPage = 0;
-  }
+    int screenIndex = screenMap[nowmap[i]];
+    leds[screenIndex].setRGB(255, 0, 0);
+    if (i > 0) {
+      int screenIndex2 = screenMap[nowmap[i-1]];  
+      leds[screenIndex2].setRGB(255, 50, 0);
+    }
 
-  // Serial.println(kCurrentPage);
-  // Serial.println();
-  // Serial.println();
-  // Serial.println();
-  // Serial.println();
-  // Serial.println();
+    if (i > 1) {
+      int screenIndex3 = screenMap[nowmap[i-2]];
+      leds[screenIndex3].setRGB(255, 100, 0);
+    }
 
-  // leds[1] = CRGB::Brown;
-  // leds[1].nscale8(64);
-  // FastLED.setBrightness(64);// Set the brightness to 64/255
+    if (i > 2) {
+      int screenIndex3 = screenMap[nowmap[i-3]];
+      leds[screenIndex3].setRGB(255, 150, 0);
+    }
+
+    if (i > 3) {
+      int screenIndex3 = screenMap[nowmap[i-4]];
+      leds[screenIndex3].setRGB(255, 150, 0);
+    }
+
+    if (i > 4) {
+      int screenIndex3 = screenMap[nowmap[i-5]];
+      leds[screenIndex3].setRGB(255, 200, 0);
+    }
+
+    if (i > 5) {
+      int screenIndex3 = screenMap[nowmap[i-6]];
+      leds[screenIndex3].setRGB(255, 250, 0);
+    }
+
+    if (i > 6) {
+      int screenIndex3 = screenMap[nowmap[i-7]];
+      leds[screenIndex3].setRGB(0, 0, 0);
+    }
+    
+    FastLED.show();
+    delay(100);
+  }
+  
+}
+
+void cacl() {
+  int c = 0;
+  int r = 0;
+  int cp = 0;
+  int rp = 1;
+  FastLED.clear();
+  while ((r * column + c) != column * row) {
+    Serial.printf("%d, %d\n", c, r);
+    int index = r * column + c;
+    int screenIndex = screenMap[index];
+    leds[screenIndex].setRGB(255, 0, 0);
+    if (r == row - 1 && c % 2 == 0) {
+      rp = 0;
+      cp = 1;
+    }
+    if (r == row -1 && c % 2 == 1) {
+      rp = -1;
+      cp = 0;
+    } 
+
+    if (r == 0 && c % 2 == 1) {
+      rp = 0;
+      cp = 1;
+    }
+
+    if (r == 0 && c % 2 == 0) {
+      rp = 1;
+      cp = 0;
+    }
+    c += cp;
+    r += rp;
+    
+    FastLED.show();
+    delay(100);
+  }
+}
+
+void loop() {
+  cacl();
+  // //获取数组
+  // JsonObject root = animationDoc.as<JsonObject>();
+  // JsonArray data = root["data"];
+  // JsonArray frame = data[kCurrentPage]["map"]; 
+  // int duration = data[kCurrentPage]["duration"];
+  // for (int i = 0; i < row * column; i++)
+  // {
+  //   //LED赋值
+  //    if (screen[i] != frame[i]["color"]) {
+  //     int color = frame[i]["color"];
+  //     int red = (color & 0xFF0000) >> 16;
+  //     int green = (color & 0xFF00) >> 8;
+  //     int blue = color & 0xFF;
+  //     int screenIndex = screenMap[i];
+  //     leds[screenIndex].setRGB(red, green, blue);
+  //     // Serial.printf("index %d/%d - %d - %d -%d color %d\n", i, screenIndex, red, green, blue, color);
+  //     screen[i] = frame[i]["color"];
+  //    }
+  // }
+  // FastLED.show();
+  // delay(150);
+  // kCurrentPage++;
+  // if (kCurrentPage == data.size()) {
+  //   kCurrentPage = 0;
+  // }
+
+  
+
+
 }
