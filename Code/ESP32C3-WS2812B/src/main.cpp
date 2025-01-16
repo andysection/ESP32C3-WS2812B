@@ -151,34 +151,31 @@ void cacl() {
 }
 
 void loop() {
-  cacl();
-  // //获取数组
-  // JsonObject root = animationDoc.as<JsonObject>();
-  // JsonArray data = root["data"];
-  // JsonArray frame = data[kCurrentPage]["map"]; 
-  // int duration = data[kCurrentPage]["duration"];
-  // for (int i = 0; i < row * column; i++)
-  // {
-  //   //LED赋值
-  //    if (screen[i] != frame[i]["color"]) {
-  //     int color = frame[i]["color"];
-  //     int red = (color & 0xFF0000) >> 16;
-  //     int green = (color & 0xFF00) >> 8;
-  //     int blue = color & 0xFF;
-  //     int screenIndex = screenMap[i];
-  //     leds[screenIndex].setRGB(red, green, blue);
-  //     // Serial.printf("index %d/%d - %d - %d -%d color %d\n", i, screenIndex, red, green, blue, color);
-  //     screen[i] = frame[i]["color"];
-  //    }
-  // }
-  // FastLED.show();
-  // delay(150);
-  // kCurrentPage++;
-  // if (kCurrentPage == data.size()) {
-  //   kCurrentPage = 0;
-  // }
-
-  
-
-
+  // roundLoop();
+  // cacl();
+  //获取数组
+  JsonObject root = animationDoc.as<JsonObject>();
+  JsonArray data = root["data"];
+  JsonArray frame = data[kCurrentPage]["map"]; 
+  int duration = data[kCurrentPage]["duration"];
+  for (int i = 0; i < row * column; i++)
+  {
+    //LED赋值
+     if (screen[i] != frame[i]["color"]) {
+      int color = frame[i]["color"];
+      int red = (color & 0xFF0000) >> 16;
+      int green = (color & 0xFF00) >> 8;
+      int blue = color & 0xFF;
+      int screenIndex = screenMap[i];
+      leds[screenIndex].setRGB(red, green, blue);
+      // Serial.printf("index %d/%d - %d - %d -%d color %d\n", i, screenIndex, red, green, blue, color);
+      screen[i] = frame[i]["color"];
+     }
+  }
+  FastLED.show();
+  delay(150);
+  kCurrentPage++;
+  if (kCurrentPage == data.size()) {
+    kCurrentPage = 0;
+  }
 }

@@ -9,6 +9,8 @@
 #import <Masonry.h>
 #import <YYModel.h>
 #import "SOFrameCell.h"
+#import "AVFAudio/AVAudioSession.h"
+#import <AVFoundation/AVFoundation.h>
 
 int column = 17;
 int row = 5;
@@ -59,6 +61,23 @@ NSString *cellId = @"cellId";
     NSLog(@"%d", i);
     int j = ((i & 0xFF0000) >> 8) >>8;
     NSLog(@"%d", j);
+    
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    AVAudioSessionRouteDescription *routeDescription = [session currentRoute];
+    if (routeDescription) {
+        NSArray *outputs = [routeDescription outputs];
+        if (outputs && 0 < [outputs count]) {
+            AVAudioSessionPortDescription *portDescription = [outputs objectAtIndex:0];
+            NSString *rtType = [portDescription portType];
+            if (portType && [portType isEqualToString:@"BluetoothA2DPOutput"] && [portType isEqualToString:@"BluetoothHFP"] && [portType isEqualToString:@"BluetoothHSP"]) {
+                NSLog(@"123");
+            }
+        }
+//        11:11:22:98:44:89-tacl
+//        11:11:22:98:44:8C-tacl
+//        11112298448e
+//        11:11:22:98:44:8E-tacl
+    }
 }
 
 - (void)setupGrid {
